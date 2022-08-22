@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="delete" onClick="toggleModal()">Delete</button>
+
+    <div class="modal" id="modal">
+        <div class="container">
+            <section>
+                <h2>Você realmente deseja apagar essa foto?</h2>
+            </section>
+            <section class="modal-content">
+                <p>A partir do momento da confirmação o arquivo em questão será excluído do nosso banco de dados, logo, não será mais possível recuperá-lo.</p>
+            </section>
+            <div class="buttons">
+            <button class="modal-button" onClick="toggleModal()">Cancel</button>
+            <button class="modal-button modal-confirm-button" onClick="toggleModal()">Confirm</button>
+            </div>
+        </div>
+            </section>
+    </div>
+
+  <script src="confirm.js"></script>
+
+</body>
+</html>
